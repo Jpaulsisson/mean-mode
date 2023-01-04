@@ -24,8 +24,8 @@ const array1 = [2, 1, 4, 3, 5, 6, 3, 5, 2, 5, 2];
 // console.log(counts)
 const count = {};
 const modeCount = (array) => {
-  array.forEach(function(x) {count[x] = (count[x] || 0) + 1;});
-  console.log(Object.values(count));
+  array.forEach(function(x) {count[x] = (count[x] || 0) + 1;});       //still having trouble figuring out an algorithm to put the first
+  console.log(Object.values(count));                                  //occuring mode as the true mode in the event of two or more modes
   return count;
 };
 
