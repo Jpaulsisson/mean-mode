@@ -12,7 +12,7 @@
 //   } return modeArr;
 // };
 
-const array1 = [2, 1, 4, 3, 5, 6, 3, 5, 2, 5, 2];
+const array1 = [1, 2, 3, 4, 5, 6, 7];
 
 // // console.log(array1);
 // // console.log(array1.sort((a, b) => b - a));
@@ -29,4 +29,16 @@ const modeCount = (array) => {
   return count;
 };
 
-console.log(modeCount(array1));
+//console.log(modeCount(array1));
+
+
+// MEAN //
+
+const meanFinder = (array) => {
+  let total = 0;
+    array.forEach(arg => {total += arg});    //works like a dream.. much easier than mode
+    let mean = (total / array.length); 
+  return mean;
+};
+
+console.log(meanFinder(array1));
